@@ -11,6 +11,7 @@ public class LimitsConfigurationController {
 	@Autowired
 	private Configuration configuration;
 
+	// http://localhost:8080/limits
 	@GetMapping("/limits")
 	public LimitsConfiguration retreiveLimistFromConfigurations() {
 		return new LimitsConfiguration(configuration.getMaximum(), configuration.getMinimum());
