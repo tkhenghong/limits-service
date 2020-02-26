@@ -11,9 +11,11 @@ import org.springframework.boot.SpringApplication;
 // 3. Spring Boot Actuator: To monitor APItraffic
 // 4. Spring Boot Config Client: To connect to your Spring Boot Cloud Config app
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 // We have created a micro service 
 @SpringBootApplication
+@EnableDiscoveryClient
 public class LimitsServiceApplication {
 
 	public static void main(String[] args) {
